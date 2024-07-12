@@ -42,6 +42,10 @@ Partial Class Form1
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.YaLa = New System.Windows.Forms.Label()
+        Me.RollLab = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.SuspendLayout()
@@ -60,6 +64,10 @@ Partial Class Form1
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.RollLab)
+        Me.TabPage1.Controls.Add(Me.YaLa)
+        Me.TabPage1.Controls.Add(Me.Label7)
+        Me.TabPage1.Controls.Add(Me.Label5)
         Me.TabPage1.Controls.Add(Me.Panel1)
         Me.TabPage1.Controls.Add(Me.PiLa)
         Me.TabPage1.Controls.Add(Me.Label6)
@@ -117,7 +125,7 @@ Partial Class Form1
         Me.MaLa.Name = "MaLa"
         Me.MaLa.Size = New System.Drawing.Size(134, 25)
         Me.MaLa.TabIndex = 10
-        Me.MaLa.Text = "150kg"
+        Me.MaLa.Text = "0g"
         Me.MaLa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label4
@@ -137,7 +145,7 @@ Partial Class Form1
         Me.FuLa.Name = "FuLa"
         Me.FuLa.Size = New System.Drawing.Size(90, 25)
         Me.FuLa.TabIndex = 8
-        Me.FuLa.Text = "1.00%"
+        Me.FuLa.Text = "0.00%"
         Me.FuLa.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label333
@@ -156,9 +164,9 @@ Partial Class Form1
         Me.PeLa.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PeLa.Location = New System.Drawing.Point(3, 53)
         Me.PeLa.Name = "PeLa"
-        Me.PeLa.Size = New System.Drawing.Size(57, 25)
+        Me.PeLa.Size = New System.Drawing.Size(38, 25)
         Me.PeLa.TabIndex = 6
-        Me.PeLa.Text = "23km"
+        Me.PeLa.Text = "0m"
         Me.PeLa.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'ApLa
@@ -167,9 +175,9 @@ Partial Class Form1
         Me.ApLa.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ApLa.Location = New System.Drawing.Point(3, 28)
         Me.ApLa.Name = "ApLa"
-        Me.ApLa.Size = New System.Drawing.Size(137, 25)
+        Me.ApLa.Size = New System.Drawing.Size(74, 25)
         Me.ApLa.TabIndex = 5
-        Me.ApLa.Text = "255km - 15min"
+        Me.ApLa.Text = "0m - 0s"
         Me.ApLa.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label2
@@ -189,7 +197,7 @@ Partial Class Form1
         Me.VelLa.Name = "VelLa"
         Me.VelLa.Size = New System.Drawing.Size(152, 25)
         Me.VelLa.TabIndex = 3
-        Me.VelLa.Text = "1km"
+        Me.VelLa.Text = "0m/s"
         Me.VelLa.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label3
@@ -208,9 +216,9 @@ Partial Class Form1
         Me.AltLa.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AltLa.Location = New System.Drawing.Point(3, 336)
         Me.AltLa.Name = "AltLa"
-        Me.AltLa.Size = New System.Drawing.Size(47, 25)
+        Me.AltLa.Size = New System.Drawing.Size(38, 25)
         Me.AltLa.TabIndex = 1
-        Me.AltLa.Text = "1km"
+        Me.AltLa.Text = "0m"
         Me.AltLa.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label1
@@ -236,6 +244,46 @@ Partial Class Form1
         'Timer1
         '
         Me.Timer1.Enabled = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(554, 3)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(46, 25)
+        Me.Label5.TabIndex = 14
+        Me.Label5.Text = "Roll"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(551, 142)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(47, 25)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "Yaw"
+        '
+        'YaLa
+        '
+        Me.YaLa.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.YaLa.Location = New System.Drawing.Point(510, 167)
+        Me.YaLa.Name = "YaLa"
+        Me.YaLa.Size = New System.Drawing.Size(90, 25)
+        Me.YaLa.TabIndex = 16
+        Me.YaLa.Text = "0º"
+        Me.YaLa.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'RollLab
+        '
+        Me.RollLab.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RollLab.Location = New System.Drawing.Point(510, 28)
+        Me.RollLab.Name = "RollLab"
+        Me.RollLab.Size = New System.Drawing.Size(90, 25)
+        Me.RollLab.TabIndex = 17
+        Me.RollLab.Text = "0º"
+        Me.RollLab.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Form1
         '
@@ -271,4 +319,8 @@ Partial Class Form1
     Friend WithEvents Label333 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents RollLab As Label
+    Friend WithEvents YaLa As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label5 As Label
 End Class
