@@ -117,19 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label7.Text" xml:space="preserve">
-    <value>Working on it!
-I currently plan to do a kind of altitude warning indicator, GPWS basically?
-But i think that may be too much for me, so this will basically be a simpler launch page
-As always, you can help me make this program better with suggestions!
-I can be found on JCS under the name "Polish" (or username xenton240scalper)
-Feel free to send me feedback or suggest stuff!
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAPsSURBVHhe7do9bhRREARgS44ckTr3DZwTE9gH8AXICTgDJyDnBtyBI3AAcmJCEuiyelBrVGN2
+        dufV9EA96ZNW5fnp18/7NztXb9492o5oaDo0NB0amg4NTYeGpkND06Gh6dDQdGhoOjQ0HRqaDg1Nh4am
+        Q0PToaHp0NB0aGg6NDQdGpoODU2HhqZDQ9OhoenQ0HRoaDo0NB0amg4NTYeGRxDjOrxO12ybI6BhdzFu
+        wofwI+HxDdu2Oxp2FuNVNvxn+JXw+JCLQMOuYqD5H0Ntfl0E/O0V27crGnaExmaD502fL8ahFoGG3aCh
+        4VOojcZr//uEx/Vv2PYQi0DDTmLcZkNrg6fm45MQLC3CLTtmJzTsAg0Mn0NtLBr9Nvz56InHmc0XAfu2
+        XgQadoDGZQNrQ5+bz7YH/C23qfu0XgQa7i3GXTauNvJ7WGz+JMZTblv3xbHu2PZ7o+Ge0KjwJdQGoqFP
+        bHsG2+Y+9Rg4ZrtFoOFe0KBsVG3cquZPYjzkvvVY7RaBhmox8Ca61PwHts8psG/4FuoxWy0CDdVi3Gdj
+        aqPQuLObP8Ex8lj12F/DPdtejYZKaEQ2pDZok+ZPYuCKaV0EfHtusQg0VEEDshHz5r9m218Cxwzzc+2+
+        CDRUiLHUkM2bDzHwPsMWfNg5T0HD0TDhsMvrMs6R56rnHvKsOwUNR4qx+5sizhWGvOmvRcNRMMGcaJ04
+        GiF/HY7BPvbKF4GGW4uB199WX4xiDPnusRYNtxaj7aUB1JC11NpQ6+pv3+eg4ZYwkZxQnWCL5k9QS2AX
+        /4YvAg23EuMwl4dRU9ZWa33x8vcWaHipGIf8gQS1ZY215udFCEPuPaLhJVBoYD8Rtm7+BDWGxZ9A2T6X
+        oOG5UGAWOm/+IX6fncR46SaATReBhudAYVng/DYRTORQ9+oAag7sNphNF4GGa6GgML9bDQ53o1SF2nMO
+        dV54vNldeDRcA4VkQfMiUfgh79esMIcw7FZIGp4KBWQhQ4rrIAae3cPmScNTxBj+9OwEc8q5zed70css
+        Df8GJ8wTT4UAPiX8k82fxFj6oHH2ItDwJThRmH9EQ0Gbf0TrCHPMubKP2qsXgYZLYuDk7D//v2j+BHPN
+        Oc8XAb1Z1QcaLomBb4n1ej4KGPY1vTPMOedeFwG9WXWRkYZLYuCNCE81vOTgauHQC1VHgB5kL7AAuNyy
+        6j2Qhi+JgfcA/Liy+y0dXaAX2ZPVl1toaDo0NB0amg4NTYeGpkND06Gh6dDQdGhoOjQ0HRqaDg1Nh4am
+        Q0PToaHp0NB0aGg6NDQdGpoODU2HhqZDQ9OhoenQ0HRoaDo0NB0amg4NTYeGpvJ49Rt45LmLtIJcqwAA
+        AABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="Timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>31</value>
+    <value>35</value>
   </metadata>
 </root>

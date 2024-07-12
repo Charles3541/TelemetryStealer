@@ -1,10 +1,26 @@
-﻿Public Class Form1
+﻿Imports System.IO
+
+Public Class Form1
+    Private thingy As Timer
+    Private rocket As Bitmap
+    Private theangle As Integer
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Create program instance
-        Dim pyprog As New Process()
-        pyprog.StartInfo.UseShellExecute = False ' Start parameter
-        pyprog.StartInfo.WindowStyle = ProcessWindowStyle.Minimized 'Doesnt work, still here
-        pyprog.Start("py\python.exe", "rec\Receiver.py") ' Start the python program
+        Process.Start("recsilent.exe") ' Create program instance
+        rocket = New Bitmap("arrow.png") ' Set the bitmap for the arrow
+        rocket.SetResolution(96.0F, 96.0F) ' Get the resolution just right
+        thingy.Interval = 55 ' Add a interval to the timer
+        AddHandler thingy.Tick, AddressOf Missisipi ' Add the handler
+        thingy.Start() ' Start the timer
+    End Sub
+
+    Private Sub Missisipi(sender As Object, e As EventArgs)
+        Panel1.Refresh()
+        theangle = Convert.ToInt32(New StreamReader(New FileStream("rec\8.txt", FileMode.Open, FileAccess.Read, FileShare.ReadWrite)).ReadToEnd())
+        Using g As Graphics = Panel1.CreateGraphics()
+            g.TranslateTransform(100, 100)
+            g.RotateTransform(CSng((0 - theangle + 90)))
+            g.DrawImage(rocket, -49, -50)
+        End Using
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
