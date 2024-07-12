@@ -293,7 +293,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form1"
-        Me.Text = "TelemetryStealer"
+        Me.Text = "Telemetry Getter"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()

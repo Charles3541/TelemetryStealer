@@ -39,7 +39,7 @@ Public Class Form1
         PiLa.Text = New IO.StreamReader(New IO.FileStream("rec\8.txt", IO.FileMode.Open, IO.FileAccess.Read, IO.FileShare.ReadWrite)).ReadToEnd + "°"
         MaLa.Text = New IO.StreamReader(New IO.FileStream("rec\7.txt", IO.FileMode.Open, IO.FileAccess.Read, IO.FileShare.ReadWrite)).ReadToEnd
         FuLa.Text = New IO.StreamReader(New IO.FileStream("rec\6.txt", IO.FileMode.Open, IO.FileAccess.Read, IO.FileShare.ReadWrite)).ReadToEnd
-        RollLab.Text = New StreamReader(New FileStream("rec\10.txt", FileMode.Open, FileAccess.Read, FileShare.ReadWrite)).ReadToEnd() + "°"3
+        RollLab.Text = New StreamReader(New FileStream("rec\10.txt", FileMode.Open, FileAccess.Read, FileShare.ReadWrite)).ReadToEnd() + "°"
         YaLa.Text = New StreamReader(New FileStream("rec\9.txt", FileMode.Open, FileAccess.Read, FileShare.ReadWrite)).ReadToEnd() + "°"
     End Sub
 End Class
