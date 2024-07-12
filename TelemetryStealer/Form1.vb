@@ -5,6 +5,7 @@ Public Class Form1
     Private rocket As Bitmap
     Private theangle As Integer
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        thingy = New Timer()
         Process.Start("recsilent.exe") ' Create program instance
         rocket = New Bitmap("arrow.png") ' Set the bitmap for the arrow
         rocket.SetResolution(96.0F, 96.0F) ' Get the resolution just right
